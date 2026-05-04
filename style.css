@@ -1,0 +1,162 @@
+/* CSS written by Hudson Simpson */
+
+/* GLOBAL STYLES (MOBILE FIRST) */
+
+header, nav{
+  grid-column: 1/4;
+}
+header{
+  text-shadow: 1px  2.5px  4px gray;
+  letter-spacing: -0.5px;
+  font-size: 2em;
+  text-align: center;
+  color: black;
+}
+nav a:hover{
+  background-color: #D1B2B2; 
+  color: black;
+  list-style: none;
+}
+
+nav ul {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+  width: 100%;
+}
+nav a{
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 2 400px;
+  justify-content: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-shadow: 1px  2.5px  4px gray;
+  letter-spacing: 1.5px;
+  color: black;
+  width: 100%;
+  gap: 8rem;
+}
+h2{
+  text-align: center;
+  width: 100%; 
+  margin: 0 auto; 
+  padding: 0.5rem; 
+}
+h3 a:hover{
+  background-color: #D1B2B2; 
+  color: black;
+  list-style: none;
+}
+h3 a{
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 4 400px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px  2.5px  4px gray;
+  letter-spacing: 1px;
+  color: black;
+  width: 100%;
+}
+.section-one{
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+.section-one{
+  font-size: 1.1em;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem;
+}
+.section-one > section{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 2 300px;
+  padding: 0.75rem 1rem;
+  margin: 0.25rem;
+  border: 2.5px dashed black;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+  }
+.section-two{
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+.section-two > section{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 2 300px;
+  padding: 0.75rem 1rem;
+  margin: 0.25rem;
+  background-color: transparent;
+  border: 2.5px dashed black;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+  }
+.section-three{
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+.section-three > section{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 2 400px;
+  padding: 0.75rem 1rem;
+  margin: 0.25rem;
+  background-color: transparent;
+  border: 2.5px dashed black;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+}
+.section-four{
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+.section-four > section{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 2 400px;
+  padding: 0.75rem 1rem;
+  margin: 0.25rem;
+  background-color: transparent;
+  border: 2.5px dashed black;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+}
+body {
+  background-color: white;
+  min-width: 611px;
+  display: grid; /* Add this line */
+  gap: 1rem;
+  grid-template-columns: 10fr 1fr 1fr;
+  grid-template-rows: 0.75fr;
+  justify-content: center;
+}
+aside{
+  font-size: 1.1em;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem;
+  background-color: transparent;
+}
+.encourage{
+  text-decoration: underline;
+    text-transform: uppercase;
+}
+footer {
+  grid-column: 1 / 4;
+}
