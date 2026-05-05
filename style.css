@@ -1,21 +1,73 @@
 /* CSS written by Hudson Simpson */
 
 /* GLOBAL STYLES (MOBILE FIRST) */
-
-header, nav{
-  grid-column: 1/4;
+body {   
+    display:grid;
+     gap: 0.5rem;
+     min-width: 611px;
+       grid-template-columns: 10fr 1fr 1fr;
+  grid-template-rows: 0.75fr;
+     background-color: rgba(163, 18, 61, 0.192);
+     font-family: 'Times New Roman', Times, serif;
+     max-width: 1200px;
+     margin: 0 auto;
 }
-header{
+@media screen and (min-width: 700px) {
+    body {
+        grid-template-columns: 1fr 1fr;
+    background-color: rgba(18, 86, 163, 0.192);
+    }
+}
+@media screen and (width <= 80rem) {
+  img {
+    width: 65%;
+    max-width: 400px;
+  }
+    aside {
+    width: 65%;
+    max-width: 400px;
+  }
+}
+@media screen and (width <= 80rem) {
+  main {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+     max-width: fit-content;
+     margin: 0 auto;
+     width: 65%;
+     grid-column: 1/-1;
+  }
+  
+  #Heading-One, #Heading-Two {
+    margin: 10px;
+    padding: 1rem;
+    width: 100%;
+    min-height: auto;
+  }
+  
+  #Heading-One h2, #Heading-Two h2 {
+    font-size: 1.2rem;
+  }
+}
+header {
+    text-align: center;
+    grid-auto-columns: auto;
+    text-decoration-line: underline;
   text-shadow: 1px  2.5px  4px gray;
   letter-spacing: -0.5px;
   font-size: 2em;
-  text-align: center;
-  color: black;
+}
+header, nav {
+  grid-column: 1/4;
 }
 nav a:hover{
-  background-color: #D1B2B2; 
+  background-color: #7a8effbd; 
   color: black;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 2 400px;
+  border-radius: 10px;
 }
 
 nav ul {
@@ -42,121 +94,94 @@ nav a{
   width: 100%;
   gap: 8rem;
 }
-h2{
+main {
+    padding: 0.5rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 27rem;
+    max-width: fit-content;
+     margin: 0 auto;
+     grid-column: 1/-1;
+}
+h2 {
+  flex-wrap: wrap;
+  flex: 1 2 400px;
   text-align: center;
-  width: 100%; 
-  margin: 0 auto; 
-  padding: 0.5rem; 
+  padding: 0.5rem;
 }
-h3 a:hover{
-  background-color: #D1B2B2; 
-  color: black;
-  list-style: none;
-}
-h3 a{
-  text-decoration: none;
-  list-style: none;
+#Heading-One{
   display: flex;
   flex-wrap: wrap;
-  flex: 1 4 400px;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  text-shadow: 1px  2.5px  4px gray;
-  letter-spacing: 1px;
-  color: black;
-  width: 100%;
-}
-.section-one{
-  display: flex;
-  gap: 0.25rem;
-  flex-wrap: wrap;
-}
-.section-one{
-  font-size: 1.1em;
-  padding: 0.75rem 1rem;
-  margin: 0.5rem;
-}
-.section-one > section{
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1 2 300px;
-  padding: 0.75rem 1rem;
-  margin: 0.25rem;
-  border: 2.5px dashed black;
-  margin-bottom: 0.5rem;
-  justify-content: center;
-  }
-.section-two{
-  display: flex;
-  gap: 0.25rem;
-  flex-wrap: wrap;
-  background-color: transparent;
-}
-.section-two > section{
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1 2 300px;
-  padding: 0.75rem 1rem;
-  margin: 0.25rem;
-  background-color: transparent;
-  border: 2.5px dashed black;
-  margin-bottom: 0.5rem;
-  justify-content: center;
-  }
-.section-three{
-  display: flex;
-  gap: 0.25rem;
-  flex-wrap: wrap;
-  background-color: transparent;
-}
-.section-three > section{
-  display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   flex: 1 2 400px;
-  padding: 0.75rem 1rem;
-  margin: 0.25rem;
-  background-color: transparent;
+  text-align: center;
+  padding: 0.5rem;
+  justify-content: left;
   border: 2.5px dashed black;
-  margin-bottom: 0.5rem;
-  justify-content: center;
+  margin: 100px;
+  padding: 2em;
+  width: 200%;
+gap: 5em;}
+
+#Heading-One h2{
+  background-color: #7a8effbd;
+  border-radius: 10px;
+    margin: auto;
+    justify-content: left;
 }
-.section-four{
-  display: flex;
-  gap: 0.25rem;
-  flex-wrap: wrap;
-  background-color: transparent;
-}
-.section-four > section{
+#Heading-Two{
   display: flex;
   flex-wrap: wrap;
+ flex-direction: row;
   flex: 1 2 400px;
-  padding: 0.75rem 1rem;
-  margin: 0.25rem;
-  background-color: transparent;
+  text-align: center;
+  padding: 0.5rem;  
+  justify-content: right;
   border: 2.5px dashed black;
-  margin-bottom: 0.5rem;
+  margin: 100px;
+    padding: 2em;
+    width: 200%;
+}
+
+#Heading-Two h2{
+  background-color: #7a8effbd;
+  border-radius: 10px;
+  margin: auto;
+  justify-content: right;
+}
+#Heading-Three{
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 10px;
+}
+img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
   justify-content: center;
+  grid-column: 1/4;
 }
-body {
-  background-color: white;
-  min-width: 611px;
-  display: grid; /* Add this line */
-  gap: 1rem;
-  grid-template-columns: 10fr 1fr 1fr;
-  grid-template-rows: 0.75fr;
+
+aside {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
   justify-content: center;
-}
-aside{
-  font-size: 1.1em;
-  padding: 0.75rem 1rem;
-  margin: 0.5rem;
-  background-color: transparent;
-}
-.encourage{
-  text-decoration: underline;
-    text-transform: uppercase;
+  align-items: center;
+  margin: 0.5rem 0;
+  border: 2px solid #7a8effbd;
+  border-radius: 10px;
+  background-color: rgba(122, 142, 255, 0.1);
 }
 footer {
-  grid-column: 1 / 4;
+  text-align: center;
+  grid-column: 1/4;
+  padding: 0.5rem;
+  background-color: rgba(18, 86, 163, 0.192);
+    border-radius: 10px;
 }
